@@ -8,7 +8,7 @@ const Navbar = props => (
                 <a href="/">{props.title}</a>
             </li>
             <li>
-                {props.result}
+                {props.message}
             </li>
             <li>
             Score: {props.score} | 
