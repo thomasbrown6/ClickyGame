@@ -1,5 +1,6 @@
 {
-  "name": "mern",
+  "homepage": "https://thomasbrown6.github.io/ClickyGame/",
+  "name": "clicky-game",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,12 +12,15 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
+    "gh-pages": "^1.2.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
